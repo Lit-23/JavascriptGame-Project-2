@@ -8,12 +8,23 @@
   font-family: 'Poppins', sans-serif;
 }
 
+body {
+  background: #6563ff;
+}
+
+header {
+  padding: 20px 4%;
+}
+
+p span {
+  font-weight: 600;
+}
+
 main {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
-  background: #6563ff;
+  padding-bottom: 20px;
 }
 
 .container{
@@ -69,6 +80,37 @@ main {
 }
 .card.flip .back-view{
   transform: rotateY(0);
+}
+
+@media screen and (max-width: 640px) {
+  .container{
+    height: 350px;
+    width: 350px;
+    padding: 20px;
+  }
+  .card .front-view img{
+    width: 15px;
+  }
+  .card .back-view img {
+    max-width: 25px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container{
+    height: 300px;
+    width: 300px;
+    padding: 20px;
+  }
+  .card .front-view img{
+    width: 8px;
+  }
+  .card .back-view img {
+    max-width: 15px;
+  }
+  .cards{
+    gap: 5px;
+  }
 }
 
 /* .card.shake {
