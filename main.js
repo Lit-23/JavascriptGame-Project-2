@@ -60,7 +60,7 @@ function gameOver(index) {
   
   else if(cardsClicked.length === 4) {
     setTimeout(() => {
-      alert(`Congratiolasion, You win!`);
+      alert(`Congratulation, You win!`);
       location.reload();
     }, 500)
   }
